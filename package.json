@@ -1,0 +1,84 @@
+{
+  "name": "paf-field",
+  "version": "1.0.2",
+  "private": true,
+  "dependencies": {
+    "@std/esm": "^0.26.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
+    "@types/helmet": "0.0.47",
+    "@types/jest": "^24.9.1",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "class-validator": "^0.12.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.1.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "reflect-metadata": "^0.1.13",
+    "serve-favicon": "^2.5.0",
+    "ts-node-dev": "^1.0.0-pre.51",
+    "typeorm": "^0.2.25",
+    "wait-on": "^5.0.3"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "scripts": {
+    "debug:server": "cd server && ts-node-dev --respawn --transpileOnly ./server.ts && wait-on tcp:5000",
+    "start:client": "set PORT=4000 && react-scripts start",
+    "start:server": "node --experimental-modules build/server/server.js",
+    "start": "run-p --race start:server start:client",
+    "build:client": "react-scripts build",
+    "build:server": "cd server && tsc",
+    "build": "npm-run-all build:*",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write '**/*.{tsx,ts,jsx,js,json}'"
+  },
+  "proxy": "http://localhost:3000/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "PAF-FIELD APPLICATION & WEB",
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^12.12.48",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^8.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "author": "",
+  "license": "ISC"
+}

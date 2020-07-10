@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "db-3alk9.pub-cdb.ntruss.com",
+   "port": 3306,
+   "username": "hancomdbmobility",
+   "password": "tkfid2di2wps!*!",
+   "database": "parkingfriends",
+   "synchronize": false,
+   "logging": true,
+   "entities": [
+      "build/server/data/entity/**/*.js"
+   ],
+   "migrations": [
+      "build/server/data/migration/**/*.js"
+   ],
+   "subscribers": [
+      "build/server/data/subscriber/**/*.js"
+   ],
+   "cli": {
+      "entitiesDir": "build/server/data/entity",
+      "migrationsDir": "build/server/data/migration",
+      "subscribersDir": "build/server/data/subscriber"
+   }
+}

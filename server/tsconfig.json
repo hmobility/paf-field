@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noUnusedLocals": false,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "../",
+    "outDir": "../build/server",
+  },
+  "include": [
+    "data/entity/**/*",
+    "middlewares/**/*",
+    "controllers/**/*",
+    "routes/**/*",
+    "config/**/*", 
+    "server.ts"]
+}
